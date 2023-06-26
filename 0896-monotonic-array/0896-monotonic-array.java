@@ -4,7 +4,7 @@ class Solution {
         int n=nums.length, i=0;
         if(n==1) return flag;
         while(i<n-1 && nums[i]==nums[i+1]) i++;
-        if(i==n-1) return flag;
+        if(i==n-1 || i==n-2) return flag;
         if(nums[i]>nums[i+1]){
             while(i<n-1){
                 if(nums[i]<nums[i+1]) {
